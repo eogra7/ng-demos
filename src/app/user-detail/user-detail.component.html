@@ -1,0 +1,27 @@
+<a routerLink="">
+  <clr-icon shape="caret left"></clr-icon>
+  Back
+</a>
+<ng-container *ngIf="user$ | async as user">
+  <h1>
+    <clr-icon shape="user"></clr-icon>
+    {{user.name}}
+  </h1>
+  <div class="clr-row">
+    <div class="clr-col-12 clr-col-lg-10 clr-col-xl-8">
+      <table class="table table-vertical">
+        <tbody>
+        <tr>
+          <th>Name</th>
+          <th>{{user.name}}</th>
+        </tr>
+        <tr>
+          <th>GUID</th>
+          <th>{{user.guid}}</th>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</ng-container>
