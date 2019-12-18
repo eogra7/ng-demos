@@ -41,6 +41,7 @@ export class SampleGridComponent implements OnInit, OnDestroy {
           getParams(params: ICellRendererParams) {
             return {
               routerLink: `${params.data.guid}`,
+              label: 'Details'
             };
           },
         },
